@@ -4,136 +4,84 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Datenschutzerklärung – Geomotional</title>
   <style>
-    body{font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:#0f172a;color:#e5e7eb;margin:0}
-    main{max-width:900px;margin:0 auto;padding:24px}
-    header{padding:32px 20px;text-align:center;background:linear-gradient(135deg,#0f172a 0%,#111827 60%)}
-    h1{margin:0 0 6px;font-size:32px}
-    article{background:#111827;padding:24px;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
-    pre{white-space:pre-wrap;word-wrap:break-word;background:#0b1220;padding:16px;border-radius:12px;overflow:auto}
-    a{color:#3a7dff}
+    :root{--bg:#0f172a;--fg:#e5e7eb;--card:#111827;--link:#3a7dff;--muted:#94a3b8}
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    header{padding:32px 20px;text-align:center;background:linear-gradient(135deg,#0f172a 0%,#111827 60%)} h1{margin:0 0 6px;font-size:32px}
+    main{max-width:900px;margin:0 auto;padding:24px} article{background:var(--card);padding:24px;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+    h2,h3{margin-top:1.2em} ul{padding-left:22px} a{color:var(--link)} hr{border:0;border-top:1px solid #263245;margin:18px 0}
+    footer{max-width:900px;margin:12px auto 40px;padding:0 20px;color:var(--muted)}
   </style>
 </head>
 <body>
-  <header><h1>Geomotional</h1><p>Rechtliche Informationen</p></header>
-  <main><article><h1>Datenschutzerklärung</h1><pre># Datenschutzerklärung für die App „Geomotional“ (Android)
+<header><h1>Geomotional</h1><p>Rechtliche Informationen</p></header>
+<main><article>
+  <h2>Datenschutzerklärung für die App „Geomotional“ (Android)</h2>
+  <p><strong>Stand:</strong> 2025-08-27 • <strong>Version:</strong> 1.0</p>
+  <p><strong>Diensteanbieter / Verantwortlicher i.S.d. DSGVO:</strong><br>
+  <strong>Sven Ackermann</strong> (Privatperson)<br>
+  <strong>Anschrift:</strong> An den Ladillen 31, 27798 Hude, Germany<br>
+  <strong>E-Mail (Support):</strong> <a href="mailto:support@geomotional.app">support@geomotional.app</a></p>
+  <hr>
 
-**Stand:** 2025-08-27 • **Version:** 1.0  
-**Diensteanbieter / Verantwortlicher i.S.d. DSGVO:**  
-**Sven Ackermann** (Privatperson)  
-**Anschrift:** An den Ladillen 31, 27798 Hude, Germany  
-**E-Mail (Support):** support@geomotional.app
+  <h3>1. Geltungsbereich</h3>
+  <p>Diese Datenschutzerklärung gilt für die Android-App „Geomotional“. Sie erläutert Art, Umfang und Zwecke der Verarbeitung personenbezogener Daten innerhalb der App sowie der verbundenen Backend-Dienste.</p>
 
----
+  <h3>2. Kurzüberblick</h3>
+  <ul>
+    <li><strong>Kernfunktionen:</strong> Spots auf Karte, Medien an Spot (nur Ersteller), „Vor-Ort-Entsperrung“ (~50 m), Teilen mit anderen, Nähe-Hinweise (Push), Navigation.</li>
+    <li><strong>Offline-First:</strong> Lokale (verschlüsselte) Zwischenspeicherung mit späterer Synchronisation.</li>
+    <li><strong>Account:</strong> Gastmodus; optional Magic-Link (E-Mail) und Google-Login.</li>
+    <li><strong>Mixed-Audience/Kinder:</strong> Geburtsjahr-Abfrage; unter 13 J. Kindermodus mit reduzierter Datenerhebung.</li>
+    <li><strong>Keine Werbung in V1.</strong></li>
+    <li><strong>Sicherheit:</strong> Gerätespeicher verschlüsselt (AES-GCM, Schlüssel im Android Keystore); Transport via TLS.</li>
+  </ul>
 
-## 1. Geltungsbereich
-Diese Datenschutzerklärung gilt für die Android-App **„Geomotional“**. Sie erläutert Art, Umfang und Zwecke der Verarbeitung personenbezogener Daten innerhalb der App sowie der verbundenen Backend-Dienste.
+  <h3>3. Datenkategorien</h3>
+  <p><strong>Kontodaten:</strong> Anzeigename (Pflicht), Avatar (optional), E-Mail bzw. Google-ID-Token – Zweck: Konto/Sync/Teilen. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO, ggf. lit. a.</p>
+  <p><strong>Standortdaten:</strong> präzise Standortdaten für Spots/Entsperrung/Geofencing (optional „Immer erlauben“). Kein permanentes Bewegungsprofil. Rechtsgrundlage: Art. 6 Abs. 1 lit. b; für Hintergrund-Standort Einwilligung, Art. 6 Abs. 1 lit. a.</p>
+  <p><strong>Medien & Inhalte:</strong> vom Spot-Ersteller hochgeladene Fotos/Videos/Audio/Text; Eingeladene: V1 nur Kommentare/Reaktionen. Rechtsgrundlage: Art. 6 Abs. 1 lit. b.</p>
+  <p><strong>Kommunikations-/Nutzungsdaten:</strong> Push-Tokens (FCM), Crashlytics, Analytics (im Kindermodus reduziert/aus), Freigabe-Metadaten. Rechtsgrundlage: Art. 6 Abs. 1 lit. f bzw. Einwilligung.</p>
 
-## 2. Kurzüberblick (Was passiert mit deinen Daten?)
-- **Kernfunktionen:** Spots auf Karte erstellen, Medien an Spot anhängen (nur Ersteller), „Vor-Ort-Entsperrung“ (Radius ca. 50 m), Teilen mit anderen, Nähe-Hinweise (Push), Navigation zum Spot.
-- **Offline-First:** Daten werden lokal (verschlüsselt) zwischengespeichert und bei Verbindung synchronisiert.
-- **Account:** Gastmodus möglich; optional Account per **Magic-Link** (E-Mail) und **Google-Login**. (Apple-Login später)
-- **Kinder/Mixed-Audience:** App kann von Kindern genutzt werden. Beim ersten Start fragen wir das **Geburtsjahr** ab. Für unter 13 Jahren aktivieren wir einen **Kindermodus** mit eingeschränkter Datenerhebung.
-- **Keine Werbung in V1:** In der MVP-Version werden **keine Anzeigen** ausgeliefert.
-- **Sicherheit:** Verschlüsselung am Gerät (AES-GCM; Key im Android Keystore), Transport nur per HTTPS/TLS.
+  <h3>4. Berechtigungen (Android)</h3>
+  <ul>
+    <li>Standort („Während der Nutzung“; optional „Immer erlauben“ für Geofencing)</li>
+    <li>Benachrichtigungen</li>
+    <li>Kamera/Mikrofon/Dateien (nur beim Hinzufügen von Medien)</li>
+    <li>Netzwerkzugriff</li>
+  </ul>
 
-## 3. Kategorien personenbezogener Daten
-### 3.1 Kontodaten &amp; Identität
-- **Anzeige-Name** (Pflicht), **Avatar** (optional)
-- **E-Mail** (für Magic-Link) bzw. Google-Konto-ID-Token (bei Google-Login)
+  <h3>5. Verarbeitung im Detail</h3>
+  <p><strong>Offline:</strong> SQLite/Room für Metadaten; lokaler App-Speicher für Thumbnails/Previews; LRU-Cache; „Offline speichern“ (Pin). Verschlüsselung at rest.</p>
+  <p><strong>Cloud-Dienste (Auftragsverarbeiter):</strong> Supabase (EU-Region, z. B. Frankfurt) – Auth, Postgres, Storage; Google Firebase – FCM, Crashlytics, Analytics; Google Maps SDK. Mögliche Übermittlung in die USA auf Basis SCCs; EU-Regionen aktiviert, wo verfügbar.</p>
 
-**Zweck:** Kontoerstellung, Anmeldung, Synchronisation, Teilen/Einladungen.  
-**Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung), ggf. lit. a (Einwilligung).
+  <h3>6. Zwecke & Rechtsgrundlagen im Überblick</h3>
+  <ul>
+    <li>App-Funktionen (Vertrag): Art. 6 Abs. 1 lit. b</li>
+    <li>Einwilligungspflichtiges (z. B. Hintergrund-Standort, Push): Art. 6 Abs. 1 lit. a</li>
+    <li>Sicherheit/Qualität: Art. 6 Abs. 1 lit. f</li>
+    <li>Gesetzliche Pflichten: Art. 6 Abs. 1 lit. c</li>
+  </ul>
 
-### 3.2 Standortdaten
-- **Präzise Standortdaten** zur Erstellung/Entsperrung von Spots, **Geofencing** (Hintergrund-Standort, falls zugelassen).
-- Speicherung der **Spot-Koordinate**; **kein permanentes Bewegungsprofil**.
-- Bei Kindermodus beschränken wir die Verarbeitung auf das für die Funktion notwendige Maß.
+  <h3>7. Kinder & Jugendliche</h3>
+  <p>Geburtsjahr-Abfrage; <strong>unter 13</strong> Kindermodus (keine personalisierte Werbung, eingeschränkte Analytics). Unter 16 Einwilligungen ggf. durch Sorgeberechtigte.</p>
 
-**Zweck:** Kernfunktion „Vor-Ort-Entsperrung“, Nähe-Hinweise, Navigation.  
-**Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO; für Hintergrund-Standort **Einwilligung** (Art. 6 Abs. 1 lit. a).
+  <h3>8. Empfänger</h3>
+  <p>Eingeladene Nutzer (nach Freigabe), Auftragsverarbeiter (Supabase, Google Firebase/Maps). Keine Weitergabe zu Werbezwecken.</p>
 
-### 3.3 Medien &amp; Inhalte
-- **Vom Spot-Ersteller** hochgeladene **Fotos/Videos/Audio/Text** (Eingeladene: in V1 nur **Kommentare/Reaktionen**, keine Medien).
-- Optional: **Thumbnails/komprimierte Previews** am Gerät und im Storage.
+  <h3>9. Speicherdauer & Löschung</h3>
+  <p>Account/Spots/Kommentare bis Löschung; Medien bis Löschung; optional Lifecycle-Regeln; Crash/Analytics wenige Monate; lokaler Cache automatisch/manuell.</p>
 
-**Zweck:** Bereitstellung von Spot-Inhalten, Teilen, Offline-Nutzung.  
-**Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO.
+  <h3>10. Deine Rechte</h3>
+  <p>Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch; Widerruf von Einwilligungen; Beschwerde bei einer Aufsichtsbehörde. Kontakt: <a href="mailto:support@geomotional.app">support@geomotional.app</a>.</p>
 
-### 3.4 Kommunikations- und Nutzungsdaten
-- **Push-Tokens** (Firebase Cloud Messaging – FCM)
-- **Technische Ereignisse/Crash-Daten** (Firebase Crashlytics), **Nutzungsmetriken** (Firebase Analytics – im Kindermodus reduziert bzw. deaktiviert)
-- **Einladungen/Sharing-Metadaten** (wer darf was sehen).
+  <h3>11. Sicherheit</h3>
+  <p>TLS, Gerätespeicher-Verschlüsselung, rollenbasierte Zugriffe, Least-Privilege.</p>
 
-**Zweck:** Benachrichtigungen, Stabilität, Qualitätssicherung, Missbrauchsprävention.  
-**Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse: App-Betrieb, Sicherheit); ggf. lit. a (Einwilligung für Benachrichtigungen).
+  <h3>12. Automatisierte Entscheidungen</h3>
+  <p>Keine Entscheidungen i.S.v. Art. 22 DSGVO; kein Profiling.</p>
 
-## 4. Berechtigungen (Android)
-- **Standort**: „Während der Nutzung“ für Karte/Nähe, **„Immer erlauben“** (optional) für Geofencing im Hintergrund.
-- **Benachrichtigungen**: für Nähe-Hinweise, Einladungen, Besuchs-/Feedback-Infos.
-- **Kamera/Mikrofon/Dateien**: nur wenn du Medien an Spots anfügst.
-- **Netzwerkzugriff**: Synchronisation, Karten, Einladungen.
-
-Du kannst Berechtigungen in den System-Einstellungen jederzeit widerrufen; einzelne Funktionen sind dann ggf. nicht nutzbar.
-
-## 5. Verarbeitung im Detail
-### 5.1 Offline-Speicherung
-- **SQLite/Room** für Metadaten (Spots, Freigaben, Kommentare).  
-- **Lokaler App-Speicher** für Thumbnails/Previews; **Verschlüsselung at rest** (AES-GCM, Schlüssel im Android Keystore).
-- **LRU-Cache**; Nutzer kann Inhalte „**Offline speichern**“ (pinnen).
-
-### 5.2 Cloud-Dienste (Auftragsverarbeiter)
-- **Supabase** (EU-Region, z. B. Frankfurt): Auth, Postgres-DB, Storage.  
-- **Google Firebase**: **FCM** (Push), **Crashlytics** (Fehler), **Analytics** (Nutzung; im Kindermodus eingeschränkt/aus).
-- **Google Maps SDK** (Kartenanzeige/Geocoding).
-
-**Datenübermittlung in Drittländer:** Bei Google-Diensten kann eine Übermittlung in die USA stattfinden. Wir stützen dies auf **EU-Standardvertragsklauseln (SCCs)**; zudem aktivieren wir, wo verfügbar, EU-Regionseinstellungen. Supabase betreiben wir in der **EU-Region**.
-
-## 6. Zwecke &amp; Rechtsgrundlagen im Überblick
-- **Bereitstellung der App-Funktionen (Vertrag)**: Art. 6 Abs. 1 lit. b DSGVO  
-- **Einwilligungspflichtige Funktionen** (z. B. Hintergrund-Standort, Benachrichtigungen): Art. 6 Abs. 1 lit. a DSGVO  
-- **Sicherheit, Missbrauchsprävention, Qualität**: Art. 6 Abs. 1 lit. f DSGVO  
-- **Gesetzliche Pflichten** (z. B. Aufbewahrungspflichten): Art. 6 Abs. 1 lit. c DSGVO
-
-## 7. Kinder &amp; Jugendliche (Mixed-Audience)
-- **Altersabfrage (Geburtsjahr)** beim ersten Start.  
-- **Unter 13 Jahren**: **Kindermodus** (keine personalisierte Werbung, eingeschränkte Analytics, reduzierte Datenverarbeitung).  
-- **Unter 16 Jahren**: Für Funktionen, die eine **Einwilligung** erfordern, holen wir – soweit erforderlich – die **Zustimmung der Sorgeberechtigten** ein oder schränken die Funktion ein.  
-- Wir sammeln **nicht wissentlich** zusätzliche Daten von Kindern über das erforderliche Maß hinaus.
-
-## 8. Teilen/Empfänger
-- Andere Nutzer, denen du **explizit Zugriff** gewährst (Einladungslink oder Nutzername).  
-- **Auftragsverarbeiter**: Supabase, Google Firebase / Google Maps (s. oben).  
-- **Keine** Weitergabe an sonstige Dritte zu Werbezwecken.
-
-## 9. Speicherdauer &amp; Löschung
-- **Accountdaten/Spots/Kommentare**: bis zur **Löschung durch dich** oder Beendigung deines Accounts.  
-- **Uploads/Medien**: bis zur Löschung durch dich; ggf. Lifecycle-Regeln (Archivierung/Löschung nicht gepinnter Originale nach X Tagen).  
-- **Crash-/Analysedaten**: gemäß Vorgaben der jeweiligen Dienste, typischerweise wenige Monate.  
-- **Lokaler Cache**: automatisch nach Speicher-/Nutzungsregeln; manuell entfernbar.
-
-## 10. Deine Rechte (DSGVO)
-- **Auskunft**, **Berichtigung**, **Löschung**, **Einschränkung**, **Datenübertragbarkeit**, **Widerspruch** gegen Verarbeitung auf Basis berechtigter Interessen.  
-- **Widerruf** erteilter Einwilligungen mit Wirkung für die Zukunft.  
-- **Beschwerde** bei einer Datenschutzaufsichtsbehörde, z. B. der für deinen Wohnsitz zuständigen.
-
-Kontakt zur Ausübung deiner Rechte: support@geomotional.app
-
-## 11. Sicherheit
-- **Transportverschlüsselung (TLS)**, **Speicherverschlüsselung** am Gerät, **rollenbasierte Zugriffe** im Backend.  
-- Regelmäßige Updates und **Least-Privilege-Prinzip** für Schlüssel/Token.
-
-## 12. Automatisierte Entscheidungen/Profiling
-- Es findet **keine** automatisierte Entscheidungsfindung im Sinne von Art. 22 DSGVO statt; kein Profiling.
-
-## 13. Änderungen dieser Erklärung
-Wir können diese Datenschutzerklärung anpassen, wenn Funktionen oder rechtliche Rahmenbedingungen sich ändern. Es gilt stets die in der App/auf der Website veröffentlichte aktuelle Version.
-
----
-
-**Kontakt:**  
-Sven Ackermann
-An den Ladillen 31
-27798 Hude
-Germany
-</pre></article></main>
+  <h3>13. Änderungen</h3>
+  <p>Anpassungen bei Funktions- oder Rechtsänderungen; jeweils gültig ist die hier veröffentlichte Version.</p>
+</article></main>
+<footer><small>© 2025 Sven Ackermann · <a href="index.html">Zur Startseite</a></small></footer>
 </body></html>
